@@ -1,0 +1,79 @@
+body{
+
+    font-family: 'Segoe UI', sans-serif;
+
+    background:#faf8f5;
+
+    color:#222;
+
+}
+
+.navbar{
+
+    background:#f3ebe2 !important;
+
+}
+
+.navbar-brand{
+
+    color:#7b4b2a;
+    font-size:28px;
+
+}
+
+.nav-link{
+
+    color:#333;
+    font-weight:500;
+
+}
+
+.nav-link:hover{
+
+    color:#8d5d37;
+
+}
+
+h1{
+
+    font-size:60px;
+    margin-bottom:20px;
+
+}
+
+h2{
+
+    font-size:50px;
+
+}
+
+h3{
+
+    font-size:35px;
+
+}
+
+p{
+
+    text-align:justify;
+    line-height:1.8;
+
+}
+
+img{
+
+    transition:.4s;
+
+}
+
+img:hover{
+
+    transform:scale(1.02);
+
+}
+
+footer{
+
+    background:#ececec;
+
+}
