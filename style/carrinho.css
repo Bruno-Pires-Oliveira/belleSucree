@@ -1,5 +1,5 @@
 /* ===========================
-   RESET
+RESET
 =========================== */
 :root{
     --fundoPrincipal: #FFF8F0;
@@ -12,545 +12,368 @@
     --bordaDetalhes: #EADBC8;
     --destaqueIcones: #D8A45B;
 }
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: #f5f5f7;
-
-    color: #333;
-
-    line-height: 1.5;
-
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f7;
+    color:#333;
+    line-height:1.5;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-button {
-    cursor: pointer;
-    font-family: inherit;
+button{
+    cursor:pointer;
+    font-family:inherit;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+img{
+    display:block;
+    max-width:100%;
 }
 
-.container {
-
-    max-width: 1400px;
-
-    margin: auto;
-
+.container{
+    max-width:1400px;
+    margin:auto;
 }
 
 /* ===========================
 HEADER
 =========================== */
 
-.header {
-
-    background: #fff;
-
-    padding: 20px 60px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    box-shadow: 0 2px 15px rgba(0, 0, 0, .06);
-
+.header{
+    background:#fff;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 15px rgba(0,0,0,.06);
 }
 
-.logo img {
-
-    height: 60px;
-
+.logo img{
+    height:60px;
 }
 
-nav {
-
-    display: flex;
-
-    gap: 40px;
-
-    font-weight: 600;
-
+nav{
+    display:flex;
+    gap:40px;
+    font-weight:600;
 }
 
-nav a {
-
-    transition: .3s;
-
+nav a{
+    transition:.3s;
 }
 
-nav a:hover {
-
-    color: #ff6d52;
-
+nav a:hover{
+    color:#ff6d52;
 }
 
 /* ===========================
 MAIN
 =========================== */
 
-main {
+main{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 350px;
+    gap:30px;
+    padding:40px;
+    align-items:start;
+}
 
-    display: grid;
+.checkout{
+    min-width:0;
+}
 
-    grid-template-columns: 2fr 420px;
-
-    gap: 30px;
-
-    padding: 40px;
-
-    align-items: start;
-
+aside{
+    width:100%;
 }
 
 /* ===========================
 CARD
 =========================== */
 
-.card {
-
-    background: #fff;
-
-    border-radius: 18px;
-
-    padding: 25px;
-
-    margin-bottom: 25px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
-
+.card{
+    overflow: hidden;
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 
 /* ===========================
 ENDEREÇO
 =========================== */
 
-.endereco h2 {
-
-    margin-bottom: 15px;
-
+.endereco h2{
+    margin-bottom:15px;
 }
 
-.info strong {
-
-    display: block;
-
-    font-size: 18px;
-
-    margin-bottom: 5px;
-
+.info strong{
+    display:block;
+    font-size:18px;
+    margin-bottom:5px;
 }
 
-.info span {
-
-    color: #777;
-
+.info span{
+    color:#777;
 }
 
-.info p {
-
-    margin-top: 10px;
-
-    color: #555;
-
+.info p{
+    margin-top:10px;
+    color:#555;
 }
 
 /* ===========================
 PRODUTOS
 =========================== */
 
-.titulo-produtos {
-
-    display: grid;
-
-    grid-template-columns: 90px 300px 150px 150px 120px;
-
-    font-weight: bold;
-
-    color: #777;
-
-    padding-bottom: 15px;
-
-    border-bottom: 1px solid #ececec;
-
-    margin-bottom: 15px;
-
+.titulo-produtos{
+    display:grid;
+    grid-template-columns:80px 2fr 1fr 1fr 1fr;
+    gap:15px;
+    align-items:center;
+    font-weight:bold;
+    color:#777;
+    padding-bottom:15px;
+    border-bottom:1px solid #ececec;
+    margin-bottom:15px;
 }
 
-.produto {
-
-    display: grid;
-
-    grid-template-columns: 90px 1fr 120px 150px 120px;
-
-    align-items: center;
-
-    gap: 20px;
-
-    padding: 18px 0;
-
-    border-bottom: 1px solid #efefef;
-
+.produto{
+    display:grid;
+    grid-template-columns:80px 2fr 1fr 1fr 1fr;
+    gap:15px;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid #efefef;
+}
+.produto:last-child{
+    border:none;
 }
 
-.produto:last-child {
-
-    border: none;
-
+.produto-img{
+    width:80px;
+    height:80px;
+    border-radius:12px;
+    overflow:hidden;
+    background:#f1f1f1;
 }
 
-.produto-img {
-
-    width: 80px;
-
-    height: 80px;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    background: #f1f1f1;
-
+.produto-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.produto-img img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
+.produto-info{
+    min-width:0;
 }
 
-.produto-info h3 {
-
-    font-size: 18px;
-
-    margin-bottom: 6px;
-
+.produto-info h3{
+    font-size:18px;
+    margin-bottom:6px;
 }
 
-.produto-info p {
-
-    color: #777;
-
-    font-size: 14px;
-
+.produto-info p{
+    color:#777;
+    font-size:14px;
 }
 
 .preco,
-.subtotal {
-
-    font-weight: 700;
-
-    color: #444;
-
+.subtotal{
+    font-weight:700;
+    color:#444;
 }
 
-.contador {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    border: 1px solid #ddd;
-
-    border-radius: 10px;
-
-    overflow: hidden;
-
-    width: 130px;
-
+.contador{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    width:120px;
 }
 
-.contador button {
-
-    width: 40px;
-
-    height: 40px;
-
-    border: none;
-
-    background: #fafafa;
-
-    font-size: 20px;
-
-    transition: .3s;
-
+.contador button{
+    width:35px;
+    height:40px;
+    border:none;
+    background:#fafafa;
+    font-size:20px;
+    transition:.3s;
 }
 
-.contador button:hover {
-
-    background: #ff6d52;
-
-    color: #fff;
-
+.contador span{
+    flex:1;
+    text-align:center;
+    font-weight:bold;
 }
-
-.contador span {
-
-    width: 50px;
-
-    text-align: center;
-
-    font-weight: bold;
-
+.contador button:hover{
+    background:var(--botaoHover);
+    color:#fff;
 }
 
 /* ===========================
 RESUMO
 =========================== */
 
-.resumo h2 {
-
-    margin-bottom: 25px;
-
+.resumo h2{
+    margin-bottom:25px;
 }
 
-.linha {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    margin: 15px 0;
-
+.linha{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:15px 0;
 }
 
-.total {
-
-    font-size: 22px;
-
-    margin-top: 20px;
-
+.total{
+    font-size:22px;
+    margin-top:20px;
 }
 
-hr {
-
-    border: none;
-
-    border-top: 1px solid #ececec;
-
-    margin: 20px 0;
-
+hr{
+    border:none;
+    border-top:1px solid #ececec;
+    margin:20px 0;
 }
 
-.cupom {
-
-    border: none;
-
-    background: #ececec;
-
-    padding: 8px 15px;
-
-    border-radius: 8px;
-
+.cupom{
+    border:none;
+    background:#ececec;
+    padding:8px 15px;
+    border-radius:8px;
 }
 
-.finalizar {
-
-    width: 100%;
-
-    margin-top: 25px;
-
-    border: none;
-
-    padding: 18px;
-
-    border-radius: 50px;
-
-    background: #ff6d52;
-
-    color: #fff;
-
-    font-size: 18px;
-
-    font-weight: bold;
-
-    transition: .3s;
-
+.finalizar{
+    width:100%;
+    margin-top:25px;
+    border:none;
+    padding:18px;
+    border-radius:50px;
+    background:#ff6d52;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.finalizar:hover {
-
-    background: #f05539;
-
+.finalizar:hover{
+    background:#f05539;
 }
 
 /* ===========================
 PAGAMENTO
 =========================== */
 
-.pagamento h2 {
-
-    margin-bottom: 20px;
-
+.pagamento h2{
+    margin-bottom:20px;
 }
 
-.pagamento label {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-bottom: 18px;
-
+.pagamento label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
 }
 
 .continuar,
-.limpar {
-
-    width: 100%;
-
-    padding: 15px;
-
-    border: none;
-
-    border-radius: 12px;
-
-    margin-top: 15px;
-
-    font-weight: bold;
-
+.limpar{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    margin-top:15px;
+    font-weight:bold;
 }
 
-.continuar {
-
-    background: #444;
-
-    color: #fff;
-
+.continuar{
+    background:#444;
+    color:#fff;
 }
 
-.limpar {
-
-    background: #ececec;
-
+.limpar{
+    background:#ececec;
 }
 
 /* ===========================
 FOOTER
 =========================== */
 
-footer {
-
-    margin-top: 40px;
-
-    background: #fff;
-
+footer{
+    margin-top:40px;
+    background:#fff;
 }
 
-.footer-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 40px;
-
-    padding: 50px;
-
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    padding:50px;
 }
 
-.footer-logo {
-
-    width: 120px;
-
-    margin-bottom: 20px;
-
+.footer-logo{
+    width:120px;
+    margin-bottom:20px;
 }
 
-.redes {
-
-    display: flex;
-
-    gap: 18px;
-
-    font-size: 26px;
-
-    color: #555;
-
+.redes{
+    display:flex;
+    gap:18px;
+    font-size:26px;
+    color:#555;
 }
 
-.footer-grid h3 {
-
-    margin-bottom: 15px;
-
+.footer-grid h3{
+    margin-bottom:15px;
 }
 
-.footer-grid p {
-
-    color: #666;
-
-    margin-bottom: 8px;
-
+.footer-grid p{
+    color:#666;
+    margin-bottom:8px;
 }
 
-.footer-bottom {
-
-    background: #222;
-
-    color: #fff;
-
-    padding: 20px 40px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    flex-wrap: wrap;
-
-    gap: 15px;
-
-    font-size: 14px;
-
+.footer-bottom{
+    background:#222;
+    color:#fff;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:15px;
+    font-size:14px;
 }
 
 /* ===========================
 TABLET
 =========================== */
 
-@media(max-width:1024px) {
+@media (max-width:1024px){
 
-    main {
-
-        grid-template-columns: 1fr;
-
+    main{
+        grid-template-columns:1fr;
     }
 
-    aside {
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        gap: 25px;
-
+    aside{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:25px;
     }
 
 }
@@ -559,128 +382,82 @@ TABLET
 CELULAR
 =========================== */
 
-@media(max-width:768px) {
+@media (max-width:768px){
 
-    .header {
-
-        flex-direction: column;
-
-        gap: 20px;
-
-        padding: 25px;
-
+    .header{
+        flex-direction:column;
+        gap:20px;
+        padding:25px;
     }
 
-    nav {
-
-        gap: 20px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
+    nav{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    main {
-
-        padding: 20px;
-
+    main{
+        padding:20px;
     }
 
-    .titulo-produtos {
-
-        display: none;
-
+    .titulo-produtos{
+        display:none;
     }
 
-    .produto {
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 15px;
-
-        padding: 20px;
-
-        border: 1px solid #ececec;
-
-        border-radius: 16px;
-
-        margin-bottom: 18px;
-
+    .produto{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+        padding:20px;
+        border:1px solid #ececec;
+        border-radius:16px;
+        margin-bottom:18px;
     }
 
-    .produto-img {
-
-        width: 100%;
-
-        height: 200px;
-
+    .produto-img{
+        width:100%;
+        height:200px;
     }
 
-    .produto-info {
-
-        width: 100%;
-
+    .produto-info{
+        width:100%;
     }
 
-    .preco {
-
-        font-size: 22px;
-
-        color: #ff6d52;
-
+    .preco{
+        font-size:22px;
+        color:#ff6d52;
     }
 
-    .subtotal {
-
-        display: none;
-
+    .subtotal{
+        display:none;
     }
 
-    .contador {
-
-        width: 100%;
-
-        justify-content: space-between;
-
+    .contador{
+        width:100%;
+        justify-content:space-between;
     }
 
-    .contador button {
-
-        width: 60px;
-
+    .contador button{
+        width:60px;
     }
 
-    aside {
-
-        display: block;
-
+    aside{
+        display:block;
     }
 
-    .footer-grid {
-
-        grid-template-columns: 1fr;
-
-        text-align: center;
-
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
     }
 
-    .redes {
-
-        justify-content: center;
-
+    .redes{
+        justify-content:center;
     }
 
-    .footer-bottom {
-
-        flex-direction: column;
-
-        text-align: center;
-
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
     }
 
 }
@@ -689,42 +466,30 @@ CELULAR
 TELAS PEQUENAS
 =========================== */
 
-@media(max-width:480px) {
+@media (max-width:480px){
 
-    .header {
-
-        padding: 20px;
-
+    .header{
+        padding:20px;
     }
 
-    .logo img {
-
-        height: 50px;
-
+    .logo img{
+        height:50px;
     }
 
-    .card {
-
-        padding: 18px;
-
+    .card{
+        padding:18px;
     }
 
-    .produto-img {
-
-        height: 180px;
-
+    .produto-img{
+        height:180px;
     }
 
-    .produto-info h3 {
-
-        font-size: 20px;
-
+    .produto-info h3{
+        font-size:20px;
     }
 
-    .finalizar {
-
-        font-size: 16px;
-
+    .finalizar{
+        font-size:16px;
     }
 
 }
