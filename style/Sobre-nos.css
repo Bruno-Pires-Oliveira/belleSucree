@@ -2,7 +2,7 @@ body{
 
     font-family: 'Segoe UI', sans-serif;
 
-    background:#faf8f5;
+    background:#bbbb88;
 
     color:#222;
 
@@ -10,13 +10,13 @@ body{
 
 .navbar{
 
-    background:#f3ebe2 !important;
+    background:#e9b376 !important;
 
 }
 
 .navbar-brand{
 
-    color:#7b4b2a;
+    color:#4b1111;
     font-size:28px;
 
 }
