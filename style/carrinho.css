@@ -25,7 +25,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f7;
+    background: var(--fundoPrincipal) !important;
     color: #333;
     line-height: 1.5;
     padding-top: 110px;
@@ -66,13 +66,14 @@ HEADER
 }
 
 .logo-navbar {
-    height: 70px;
+    height: 120px !important;
     width: auto;
     object-fit: contain;
+    overflow: hidden;
 }
 
 .navbar-nav {
-    gap: 20px;
+    gap: 30px;
 }
 .nav-item{
     font-size: 1.4rem;
@@ -159,7 +160,7 @@ CARD
 
 .card {
     overflow: hidden;
-    background: #fff;
+    background: var(--fundoSecoes) !important;
     border-radius: 18px;
     padding: 35px;
     margin-bottom: 25px;
@@ -193,7 +194,10 @@ ENDEREÇO
 /* ===========================
 PRODUTOS
 =========================== */
-
+.scroll{
+    overflow-y: scroll !important;
+    max-height: 622px !important;
+}
 .titulo-produtos {
     display: grid;
     grid-template-columns: 80px 2fr 1fr 1fr 1fr;
@@ -262,13 +266,16 @@ PRODUTOS
     border-radius: 10px;
     overflow: hidden;
     width: 120px;
+    border-color: black;
+    background-color: #f3ede6f6;
 }
 
 .contador button {
     width: 35px;
     height: 40px;
     border: none;
-    background: #fafafa;
+    background:var(--botaoPrimario);
+    color: white;
     font-size: 20px;
     transition: .3s;
 }
@@ -313,9 +320,15 @@ hr {
 
 .cupom {
     border: none;
-    background: #ececec;
+    background: #a71d3b;
+    transition: .3s;
+    font-weight: 600;
+    color: white;
     padding: 8px 15px;
     border-radius: 8px;
+}
+.cupom:hover{
+    background: #8f1731;
 }
 
 .finalizar {
@@ -324,7 +337,7 @@ hr {
     border: none;
     padding: 18px;
     border-radius: 50px;
-    background: #ff6d52;
+    background: var(--botaoPrimario);
     color: #fff;
     font-size: 18px;
     font-weight: bold;
@@ -332,7 +345,7 @@ hr {
 }
 
 .finalizar:hover {
-    background: #f05539;
+    background:var(--botaoHover);
 }
 
 /* ===========================
@@ -352,7 +365,7 @@ PAGAMENTO
 
 .continuar,
 .limpar {
-    width: 100%;
+    width: 45%;
     padding: 15px;
     border: none;
     border-radius: 12px;
@@ -361,12 +374,15 @@ PAGAMENTO
 }
 
 .continuar {
-    background: #444;
+    background: #C98A3D;
     color: #fff;
 }
 
 .limpar {
     background: #ececec;
+}
+.btn-sem-com{
+    justify-content: space-between;
 }
 
 /* ===========================
@@ -407,7 +423,6 @@ FOOTER
 }
 
 .logo-footer {
-    width: 130px;
     border-radius: 12px;
     margin-bottom: 15px;
 }

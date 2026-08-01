@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | Cheesecake</title>
+    <title>Belle Sucrée - Carrinho</title>
     <link rel="stylesheet" href="./style/carrinho.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/default.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
+
     <!-- ================= HEADER ================= -->
 
     <header>
@@ -20,8 +22,10 @@
             <div class="container-fluid px-4">
 
                 <!-- LOGO -->
-
-                <img class="logo-navbar" src="./assets/logoBelleSucree.jpg" alt="Belle Sucrée logo">
+                <div class="logo">
+                    <img class="logo-navbar" src="./assets/logo_Belle_sucree_Horizontal-sem-fundo.png"
+                        alt="Belle Sucrée logo">
+                </div>
 
                 <!-- BOTÃO MOBILE -->
 
@@ -55,10 +59,6 @@
 
                     </ul>
 
-                    <button class="btn-pedido">
-                        Encomendar Agora
-                    </button>
-
                 </div>
 
             </div>
@@ -81,27 +81,24 @@
                 <!-- ENDEREÇO -->
 
                 <div class="card endereco">
-
                     <h2>Endereço de entrega</h2>
 
                     <div class="info">
-
-                        <strong>Pedro Lucas</strong>
-
-                        <span>(41) 99999-9999</span>
+                        <strong>Arnald Nataniel</strong>
+                        <span>(41) 98876-5432</span>
 
                         <p>
-                            Rua Exemplo, 123<br>
-                            Paranaguá - PR
+                            Rua das Araucárias, 457<br>
+                            Jardim Primavera<br>
+                            Curitiba - PR<br>
+                            CEP: 81230-450
                         </p>
-
                     </div>
-
                 </div>
 
                 <!-- PRODUTOS -->
 
-                <div class="card">
+                <div class="card scroll">
 
                     <!-- TÍTULOS CORRIGIDOS -->
 
@@ -147,6 +144,8 @@
                         </div>
 
                     </div>
+
+
 
                     <!-- PRODUTO -->
 
@@ -253,23 +252,30 @@
                 <!-- PAGAMENTO -->
 
                 <div class="card pagamento">
+                    <section>
 
-                    <h2>Método de Pagamento</h2>
+                        <h2>Método de Pagamento</h2>
 
-                    <label>
-                        <input type="radio" name="pagamento">
-                        Pix
-                    </label>
+                        <label>
+                            <input type="radio" name="pagamento">
+                            Pix
+                        </label>
 
-                    <label>
-                        <input type="radio" name="pagamento">
-                        Cartão de Crédito
-                    </label>
+                        <label>
+                            <input type="radio" name="pagamento">
+                            Cartão de Crédito
+                        </label>
 
-                    <label>
-                        <input type="radio" name="pagamento">
-                        Cartão de Débito
-                    </label>
+                        <label>
+                            <input type="radio" name="pagamento">
+                            Cartão de Débito
+                        </label>
+                    </section>
+
+
+
+                </div>
+                <div class="d-flex btn-sem-com">
 
                     <button class="continuar">
                         Continuar Comprando
@@ -280,6 +286,7 @@
                     </button>
 
                 </div>
+
 
             </aside>
 
@@ -302,6 +309,7 @@
                     <img class="logo-footer" src="./assets/logoBelleSucree.jpg" alt="Belle Sucrée logo">
 
                     <section class="d-flex gap-5 p-2">
+                        <i class="bi bi-facebook"></i>
                         <i class="bi bi-instagram"></i>
                         <i class="bi bi-twitter-x"></i>
                     </section>
@@ -310,11 +318,11 @@
 
             </div>
 
-            <!-- Navegação -->
+            <!-- localização -->
 
             <div class="footer-col">
 
-                <h3>Localizaça~o</h3>
+                <h3>Localização</h3>
 
                 <p>
                     Avenida das Flores, 248<br>
@@ -342,7 +350,7 @@
 
         <div class="footer-bottom d-flex gap-5 justify-content-center">
 
-            <span>© 2026 Cheesecake. Todos os direitos reservados.</span>
+            <span>© 2026. Todos os direitos reservados.</span>
             <span>Política de Privacidade</span>
             <span>Termos de Uso</span>
 
