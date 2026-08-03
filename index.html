@@ -38,20 +38,20 @@
                   <a class="nav-link active linkHeader" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active linkHeader" aria-current="page" href="./Sobre.html">Sobre</a>
+                  <a class="nav-link active linkHeader" aria-current="page" href="#sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active linkHeader" aria-current="page" href="./catalogo.html">Catálogo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active linkHeader" aria-current="page" href="">Depoimentos</a>
+                  <a class="nav-link active linkHeader" aria-current="page" href="#depoimento">Depoimentos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active linkHeader" aria-current="page" href="#">Contato</a>
+                  <a class="nav-link active linkHeader" aria-current="page" href="#contato">Contato</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <button class="btn btn-success" type="submit">Peça já o seu</button>
+              <form class="d-flex" role="search" action="./catalogo.html">
+                <button class="btn btn-success" type="submit" onclick="window.location.href='./catalogo.html'">Peça já o seu</button>
               </form>
             </div>
         </div>
@@ -88,8 +88,8 @@
               Bolos artesanais
             </p>
           </div>
-          <div class="cardButton">
-            <button type="button" class="cButton  btn btn-success">Ver opções</button>
+          <div class="cardButton" >
+             <button type="button" class="cButton  btn btn-success" >Ver opções</button>
           </div>
         </div>
         <div class="card">
@@ -104,7 +104,7 @@
             </p>
           </div>
           <div class="cardButton">
-            <button type="button" class="cButton  btn btn-success">Ver opções</button>
+            <button type="button" class="cButton  btn btn-success" >Ver opções</button>
           </div>
         </div>
         <div class="card">
@@ -118,7 +118,7 @@
             </p>
           </div>
           <div class="cardButton">
-            <button type="button" class="cButton  btn btn-success">Ver opções</button>
+            <button type="button" class="cButton  btn btn-success" href="./catalogo.html">Ver opções</button>
           </div>
         </div>
         <div class="card">
@@ -139,20 +139,20 @@
       </section>
       <button type="button" class="btn btn-success cCatalogo">Ver Catálogo</button>
 
-      <section class="aboutUs">
+      <section class="aboutUs" id="sobre">
         <div class="about">
           <span>Sobre Nós</span>
           <h2>Adoçar é a nossa maior paixão</h2>
           <p>Nossa confeitaria nasceu do sonho de transformar momentos comuns em lembranças especiais. Tudo é feito de
             forma artesanal, com ingredientes de qualidade e muito amor em cada receita</p>
 
-          <button type="button" class="btn btn-success buttonAbout">Nossa história</button>
+          <button type="button" class="btn btn-success buttonAbout"><a href="./Sobre.html" style="text-decoration: none;color: white;">Nossa história</a></button>
         </div>
 
         <img src="./assets/Equipe.png" alt="" class="img-fluid">
 
         <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
+          <div class="carousel-inner" id="depoimento">
             <div class="carousel-item active">
               <img src="./assets/comentárioImg.png" class="d-block w-100" alt="...">
             </div>
@@ -173,7 +173,7 @@
           </button>
         </div>
       </section>
-      <section class="contato">
+      <section class="contato" id="contato">
         <div class="contatoDescription">
           <h3>Encomende o seu momento</h3>
           <p>Entre em contato e faça já sua encomenda.
