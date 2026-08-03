@@ -2,5 +2,35 @@ body {
     padding-top: 106px !important;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0px 1fr 1fr;
+}
+
+
+.h-300px {
+    height: 340px !important;
+}
+
+.img img {
+    width: auto !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
+
+    border: 5px ridge var(--botaoHover);
+    border-radius: 15px;
+}
+
+.produtos div button {
+    background-color: var(--botaoHover) !important;
+    color: #fff !important;
+    border: 5px ridge var(--botaoPrimario);
+    border-radius: 15px;
+    text-shadow: 0 0 20px rgb(255, 120, 120);
+}
+
+.produtos > div {
+    background: radial-gradient(transparent,transparent,transparent,rgb(255, 214, 167), var(--destaqueIcones)) !important;
+    color: #000 !important;
 }
