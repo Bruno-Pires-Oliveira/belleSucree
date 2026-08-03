@@ -8,20 +8,18 @@
   --texto: #6d4c41;
   --bordaDetalhes: #eadbc8;
   --destaqueIcones: #d8a45b;
+
 }
 
-.header {
-  height: 100% !important;
-  width: 100% !important;
-  background-color: var(--fundoSecoes) !important;
-  padding: 10px !important;
-  display: flex !important;
-  border-bottom: 10px;
-}
 
+.btn:hover{
+  background-color: #d8a45b;
+}
 .logo-navbar {
   border-radius: 25px;
 }
+
+
 
 .linkHeader {
   width: 100px;
@@ -264,7 +262,9 @@ footer p{
 ========================= */
 
 @media (min-width: 1024px) {
-
+ .nav-item{
+  display: flex;
+ }
   #main {
     max-width: 1400px;
     margin: 0 auto;
