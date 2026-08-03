@@ -6,13 +6,17 @@ body {
 }
 
 
-.h-300px {
-    height: 340px !important;
+.h-400px {
+    height: 400px !important;
 }
 
+
+.img {
+    height: 220px !important;
+}
 .img > img {
-    width: auto !important;
-    height: 100% !important;
+    width: 100% !important;
+    height: auto !important;
     object-fit: cover;
     object-position: center;
     -o-object-fit: cover;
@@ -20,6 +24,11 @@ body {
 
     border: 5px ridge var(--botaoHover) !important;
     border-radius: 15px !important;
+}
+
+.produtos {
+    gap: 10px;
+    justify-content: center;
 }
 
 .produtos div button {
@@ -31,8 +40,3 @@ body {
     text-shadow: 0 0 20px rgb(255, 120, 120) !important;
 }
 
-.produtos > div {
-    /* background: radial-gradient(transparent,transparent,transparent,rgb(255, 214, 167), var(--destaqueIcones)) !important; */
-    background: radial-gradient(circle, transparent,transparent,transparent,rgb(255, 214, 167), var(--destaqueIcones)) !important;
-    color: #000 !important;
-}
