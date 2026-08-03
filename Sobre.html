@@ -44,69 +44,62 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="Sobre-nos.css">
+        <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/Sobre-nos.css">
 
 </head>
 
-<body>
+<body class="bg-main">
 
     <!-- HEADER -->
 
-    <header>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-
-            <div class="container">
-
-                <a class="navbar-brand fw-bold" href="#">
-                    Belle Sucrée
-                </a>
-
-                <button class="navbar-toggler"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menu">
-
-                    <span class="navbar-toggler-icon"></span>
-
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end"
-                    id="menu">
-
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Início</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Produtos</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Catálogo</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Depoimentos</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-
-                    </ul>
-
+<header>
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+ 
+            <div class="container-fluid px-4">
+ 
+                <!-- LOGO -->
+                <div class="logo">
+                    <img class="logo-navbar" src="./assets/logo_Belle_sucree_Horizontal.png" alt="Belle Sucrée logo">
                 </div>
-
+ 
+                <!-- BOTÃO MOBILE -->
+ 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+ 
+                    <span class="navbar-toggler-icon"></span>
+ 
+                </button>
+ 
+                <!-- MENU -->
+ 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+ 
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+ 
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre nos</a>
+                        </li>
+ 
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+ 
+ 
+ 
+                    </ul>
+ 
+                </div>
+ 
             </div>
-
+ 
         </nav>
-
     </header>
 
     <!-- SOBRE -->
@@ -144,7 +137,7 @@
                 <div class="col-lg-6">
 
                     <img
-                        src="img/facha_confeitaria.png"
+                        src="assets/facha_confeitaria.png"
                         alt="Fachada Belle Sucrée"
                         class="img-fluid rounded shadow"
                         loading="lazy">
@@ -185,7 +178,7 @@
                 <div class="col-lg-6">
 
                     <img
-                        src="img/Equipe.png"
+                        src="assets/Equipe.png"
                         alt="Equipe Belle Sucrée"
                         class="img-fluid rounded shadow"
                         loading="lazy">
@@ -200,14 +193,65 @@
 
     <!-- FOOTER -->
 
-    <footer class="bg-light text-center py-4">
-
-        <p class="mb-0">
-
-            © 2026 Belle Sucrée • Todos os direitos reservados.
-
-        </p>
-
+    <footer class="footer">
+ 
+        <div class="footer-container align-items-center">
+ 
+            <!-- Logo -->
+ 
+            <div class="footer-col d-flex flex-column">
+ 
+                <div class="d-flex flex-column align-items-center">
+ 
+                    <img class="logo-footer" src="./assets/logoBelleSucree.jpg" alt="Belle Sucrée logo">
+ 
+                    <section class="d-flex gap-5 p-2">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter-x"></i>
+                    </section>
+ 
+                </div>
+ 
+            </div>
+ 
+            <!-- localização -->
+ 
+            <div class="footer-col">
+ 
+                <h3>Localização</h3>
+ 
+                <p>
+                    Avenida das Flores, 248<br>
+                    Centro Histórico<br>
+                    Paranaguá - PR<br>
+                    CEP: 83203-120
+                </p>
+            </div>
+ 
+            <!-- Contato -->
+ 
+            <div class="footer-col">
+ 
+                <h3>Contato</h3>
+ 
+                <p>(41) 99999-9999</p>
+ 
+                <p>contato@bellesucree.com</p>
+ 
+                <p>Paranaguá - PR</p>
+ 
+            </div>
+ 
+        </div>
+ 
+        <div class="footer-bottom d-flex gap-5 justify-content-center">
+ 
+            <span>© 2026 Cheesecake. Todos os direitos reservados.</span>
+            <span>Política de Privacidade</span>
+            <span>Termos de Uso</span>
+ 
+        </div>
+ 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
