@@ -8,6 +8,10 @@ body{
 
 }
 
+main{
+    padding-top: 150px;
+}
+
 .navbar{
 
     background:#e9b376 !important;
@@ -32,6 +36,53 @@ body{
 
     color:#8d5d37;
 
+}
+
+
+
+
+
+
+
+
+
+.sobre-box{
+    background-color: #5B1F2A; /* Bordô */
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.sobre-box h1,
+.sobre-box h2,
+.sobre-box h3,
+.sobre-box p{
+    color: #fff;
+}
+
+/* <------- equipe -------> */
+.equipe-box{
+    background-color: #5B1F2A; /* Bordô */
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.equipe-box h2,
+.equipe-box h3,
+.equipe-box p{
+    color: #fff;
+}
+
+.equipe-box hr{
+    border: 2px solid #E6C79C;
+    opacity: 1;
+    width: 120px;
+}
+
+.equipe-box img{
+    border-radius: 15px;
 }
 
 h1{
