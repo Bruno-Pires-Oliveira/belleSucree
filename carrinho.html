@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Cheesecake</title>
+    <link rel="stylesheet" href="./style/carrinho.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+
+            <div class="container-fluid px-4">
+
+                <!-- LOGO -->
+
+                <img class="logo-navbar" src="./assets/logoBelleSucree.jpg" alt="Belle Sucrée logo">
+
+                <!-- BOTÃO MOBILE -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- MENU -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre nos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+
+
+
+                    </ul>
+
+                    <button class="btn-pedido">
+                        Encomendar Agora
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="checkout-container">
+
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main>
+
+            <!-- ESQUERDA -->
+
+            <section class="checkout">
+
+                <!-- ENDEREÇO -->
+
+                <div class="card endereco">
+
+                    <h2>Endereço de entrega</h2>
+
+                    <div class="info">
+
+                        <strong>Pedro Lucas</strong>
+
+                        <span>(41) 99999-9999</span>
+
+                        <p>
+                            Rua Exemplo, 123<br>
+                            Paranaguá - PR
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUTOS -->
+
+                <div class="card">
+
+                    <!-- TÍTULOS CORRIGIDOS -->
+
+                    <div class="titulo-produtos">
+
+                        <span>Produto</span>
+
+                        <div></div>
+
+                        <span>Preço</span>
+
+                        <span>Quantidade</span>
+
+                        <span>Subtotal</span>
+
+                    </div>
+
+                    <!-- PRODUTO -->
+
+                    <div class="produto">
+
+                        <div class="produto-img">
+                            <img src="./assets/Cheesecake.png" alt="Cheesecake-de-morango">
+                        </div>
+
+                        <div class="produto-info">
+                            <h3>Cheesecake Morango</h3>
+                            <p>Massa amanteigada • Calda de morango artesanal</p>
+                        </div>
+
+                        <div class="preco">
+                            R$ 70,00
+                        </div>
+
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+
+                        <div class="subtotal">
+                            R$ 70,00
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUTO -->
+
+                    <div class="produto">
+
+                        <div class="produto-img">
+                            <img src="./assets/cupcakes.png" alt="cupcakes-variados">
+                        </div>
+
+                        <div class="produto-info">
+                            <h3>Cupcakes</h3>
+                            <p>Massa fofinha • Cobertura gourmet</p>
+                        </div>
+
+                        <div class="preco">
+                            R$ 89,90
+                        </div>
+
+                        <div class="contador">
+                            <button class="transicao">-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+
+                        <div class="subtotal">
+                            R$ 89,90
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUTO -->
+
+                    <div class="produto">
+
+                        <div class="produto-img">
+                            <img src="./assets/bolo-de-casamento.png" alt="bolo-de-casamento">
+                        </div>
+
+                        <div class="produto-info">
+                            <h3>Bolo de casamento</h3>
+                            <p>Recheio premium • Decoração elegante</p>
+                        </div>
+
+                        <div class="preco">
+                            R$ 150,00
+                        </div>
+
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+
+                        <div class="subtotal">
+                            R$ 150,00
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- DIREITA -->
+
+            <aside>
+
+                <!-- RESUMO -->
+
+                <div class="card resumo">
+
+                    <h2>Resumo do Pedido</h2>
+
+                    <div class="linha">
+                        <span>Subtotal</span>
+                        <span>R$222,80</span>
+                    </div>
+
+                    <div class="linha">
+                        <span>Frete</span>
+                        <span>Grátis</span>
+                    </div>
+
+                    <div class="linha">
+                        <span>Cupom</span>
+                        <button class="cupom">
+                            Adicionar
+                        </button>
+                    </div>
+
+                    <hr>
+
+                    <div class="linha total">
+                        <span>Total</span>
+                        <strong>R$222,80</strong>
+                    </div>
+
+                    <button class="finalizar">
+                        Finalizar Pedido
+                    </button>
+
+                </div>
+
+                <!-- PAGAMENTO -->
+
+                <div class="card pagamento">
+
+                    <h2>Método de Pagamento</h2>
+
+                    <label>
+                        <input type="radio" name="pagamento">
+                        Pix
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pagamento">
+                        Cartão de Crédito
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pagamento">
+                        Cartão de Débito
+                    </label>
+
+                    <button class="continuar">
+                        Continuar Comprando
+                    </button>
+
+                    <button class="limpar">
+                        Esvaziar Carrinho
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+        <!-- ================= FOOTER ================= -->
+
+
+    </div>
+    <footer class="footer">
+
+        <div class="footer-container align-items-center">
+
+            <!-- Logo -->
+
+            <div class="footer-col d-flex flex-column">
+
+                <div class="d-flex flex-column align-items-center">
+
+                    <img class="logo-footer" src="./assets/logoBelleSucree.jpg" alt="Belle Sucrée logo">
+
+                    <section class="d-flex gap-5 p-2">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter-x"></i>
+                    </section>
+
+                </div>
+
+            </div>
+
+            <!-- Navegação -->
+
+            <div class="footer-col">
+
+                <h3>Localizaça~o</h3>
+
+                <p>
+                    Avenida das Flores, 248<br>
+                    Centro Histórico<br>
+                    Paranaguá - PR<br>
+                    CEP: 83203-120
+                </p>
+            </div>
+
+            <!-- Contato -->
+
+            <div class="footer-col">
+
+                <h3>Contato</h3>
+
+                <p>(41) 99999-9999</p>
+
+                <p>contato@bellesucree.com</p>
+
+                <p>Paranaguá - PR</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom d-flex gap-5 justify-content-center">
+
+            <span>© 2026 Cheesecake. Todos os direitos reservados.</span>
+            <span>Política de Privacidade</span>
+            <span>Termos de Uso</span>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
