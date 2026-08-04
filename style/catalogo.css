@@ -7,7 +7,7 @@ body {
 
 
 .h-400px {
-    height: 400px !important;
+    height: 420px !important;
 }
 
 
@@ -31,6 +31,10 @@ body {
     justify-content: center;
 }
 
+.produtos div {
+    border-radius: 20px;
+}
+
 .produtos div button {
     background-color: var(--botaoHover) !important;
     color: #fff !important;
@@ -40,3 +44,9 @@ body {
     text-shadow: 0 0 20px rgb(255, 120, 120) !important;
 }
 
+@media (min-width: 2560px) {
+    [class*="col-xl-2.4"] { width: 20% !important;}
+    .produtos {
+        gap: 32px;
+    }
+}
