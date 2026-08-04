@@ -10,15 +10,41 @@
     --destaqueIcones: #D8A45B;
 }
 
-.bg-main {background-color: var(--fundoPrincipal) !important;}
-.bg-sections {background-color: var(--fundoSecoes) !important;}
-.bg-destaque {background-color: var(--destaques) !important;}
-.btn-bg-primary {background-color: var(--botaoPrimario) !important;}
-.btn-hover:hover {background-color: var(--botaoHover) !important;}
-.text-title {color: var(--titulos) !important;}
-.text-common {color: var(--texto) !important;}
-.border-details {border-color: var(--bordaDetalhes) !important;}
-.icon-details {color: var(--destaqueIcones) !important;}
+.bg-main {
+    background-color: var(--fundoPrincipal) !important;
+}
+
+.bg-sections {
+    background-color: var(--fundoSecoes) !important;
+}
+
+.bg-destaque {
+    background-color: var(--destaques) !important;
+}
+
+.btn-bg-primary {
+    background-color: var(--botaoPrimario) !important;
+}
+
+.btn-hover:hover {
+    background-color: var(--botaoHover) !important;
+}
+
+.text-title {
+    color: var(--titulos) !important;
+}
+
+.text-common {
+    color: var(--texto) !important;
+}
+
+.border-details {
+    border-color: var(--bordaDetalhes) !important;
+}
+
+.icon-details {
+    color: var(--destaqueIcones) !important;
+}
 
 
 * {
@@ -34,20 +60,21 @@
     min-height: 100px;
     z-index: 9999;
 }
- 
+
 .logo-navbar {
     height: 90px;
     width: auto;
     object-fit: contain;
 }
- 
+
 .navbar-nav {
     gap: 30px;
 }
-.nav-item{
+
+.nav-item {
     font-size: 1.4rem;
 }
- 
+
 .nav-link {
     color: var(--titulos) !important;
     font-weight: 600;
@@ -56,11 +83,11 @@
     position: relative;
     transition: .3s;
 }
- 
+
 .nav-link:hover {
     color: var(--destaques) !important;
 }
- 
+
 .nav-link::after {
     content: "";
     position: absolute;
@@ -71,15 +98,15 @@
     background: var(--destaques);
     transition: .3s;
 }
- 
+
 .nav-link:hover::after {
     width: 100%;
 }
- 
+
 .nav-link.active {
     color: var(--destaques) !important;
 }
- 
+
 .btn-pedido {
     background: var(--botaoPrimario);
     color: #fff;
@@ -89,16 +116,16 @@
     font-weight: 700;
     transition: .3s;
 }
- 
+
 .btn-pedido:hover {
     background: var(--botaoHover);
     transform: translateY(-2px);
 }
- 
+
 .navbar-toggler {
     border: none;
 }
- 
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -109,13 +136,13 @@
     width: auto;
     object-fit: contain;
 }
- 
+
 .footer {
-    background: #6D4032;
+    background: #800000;
     color: #fff;
     margin-top: 80px;
 }
- 
+
 .footer-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -124,54 +151,54 @@
     gap: 80px;
     padding: 60px 60px 40px;
 }
- 
+
 .footer-col h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--destaqueIcones);
 }
- 
+
 .footer-col p {
     color: rgba(255, 255, 255, .85);
     line-height: 1.8;
 }
- 
+
 .logo-footer {
     border-radius: 12px;
     margin-bottom: 15px;
 }
- 
+
 .footer-col:first-child {
     max-width: 350px;
 }
- 
+
 .footer-col section i {
     font-size: 1.3rem;
     cursor: pointer;
     transition: .3s;
 }
- 
+
 .footer-col section i:hover {
     color: #D8A45B;
     transform: translateY(-3px);
 }
- 
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, .15);
- 
+
     padding: 25px;
- 
+
     color: rgba(255, 255, 255, .75);
- 
+
     font-size: .95rem;
 }
- 
+
 .footer-bottom span {
     cursor: pointer;
     transition: .3s;
 }
- 
+
 .footer-bottom span:hover {
     color: #D8A45B;
 }
@@ -182,42 +209,42 @@
 /* ===========================
 TABLET
 =========================== */
- 
+
 @media (max-width:1024px) {
     .footer-container {
         gap: 40px;
         padding: 50px 30px;
- 
+
     }
- 
+
 }
- 
+
 /* ===========================
 CELULAR
 =========================== */
- 
+
 @media (max-width:768px) {
- 
+
     body {
         padding-top: 95px;
     }
- 
+
     .header {
         flex-direction: column;
         gap: 20px;
         padding: 25px;
     }
- 
+
     nav {
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
- 
+
     .navbar-brand img {
         height: 60px;
     }
- 
+
     .navbar-nav {
         gap: 10px;
         text-align: center;
@@ -229,33 +256,33 @@ CELULAR
         text-align: center;
         gap: 40px;
     }
- 
+
     .footer-col:first-child {
         max-width: 100%;
     }
- 
+
     .logo-footer {
         margin: 0 auto 15px;
     }
- 
+
     .footer-col section {
         justify-content: center;
     }
- 
+
     .footer-bottom {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 12px !important;
     }
- 
+
 }
- 
+
 /* ===========================
 TELAS PEQUENAS
 =========================== */
- 
-@media (max-width:480px) { 
+
+@media (max-width:480px) {
     .header {
         padding: 20px;
     }

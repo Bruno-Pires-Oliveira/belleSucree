@@ -1,8 +1,6 @@
 body {
     padding-top: 106px !important;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0px 1fr 1fr;
+    
 }
 
 
