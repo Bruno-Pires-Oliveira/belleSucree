@@ -1,8 +1,8 @@
+
 body{
 
-    font-family: 'Segoe UI', sans-serif;
-
-    background:#bbbb88;
+    font-family: "Poppins";
+    background:#fff !important;
 
     color:#222;
 
@@ -12,11 +12,7 @@ main{
     padding-top: 150px;
 }
 
-.navbar{
 
-    background:#e9b376 !important;
-
-}
 
 .navbar-brand{
 
@@ -37,14 +33,6 @@ main{
     color:#8d5d37;
 
 }
-
-
-
-
-
-
-
-
 
 .sobre-box{
     background-color: #5B1F2A; /* Bordô */
@@ -124,7 +112,24 @@ img:hover{
 }
 
 footer{
+    background-color: #800000 !important;
+    color: white;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+    
+}
 
-    background:#ececec;
+footer p{
+    color: #fff !important;
+}
 
+
+
+.redeSocial{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
 }
