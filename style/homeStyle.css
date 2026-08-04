@@ -11,7 +11,9 @@
 
 }
 
-
+*{
+  font-family: "Poppins";
+}
 .btn:hover{
   background-color: white;
   color: black;
@@ -30,6 +32,13 @@
   transition: 2s;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
 #main {
   display: flex;
   flex-direction: column;
@@ -40,6 +49,9 @@
 
 #hero{
   border-radius: 10px;
+}
+.buttonHero{
+  height: 55px !important;
 }
 .content {
   display: flex;
