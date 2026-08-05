@@ -51,6 +51,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* =========================== Cabeçalho =========================== */
@@ -79,9 +80,9 @@
 }
 
 .nav-link {
-    color: var(--titulos) !important;
-    font-weight: 600;
-    font-size: 1.1rem;
+    color: var(--destaques) !important;
+    font-weight: 700 !important;
+    font-size: 1.4rem;
     padding: 14px 30px;
     position: relative;
     transition: .3s;
@@ -126,7 +127,7 @@
 }
 
 .navbar-toggler {
-    border: none;
+    border: 1px solid black;
 }
 
 .navbar-toggler:focus {
@@ -135,7 +136,7 @@
 
 /* =========================== Footer =========================== */
 .logo-footer {
-    height: 160px;
+    height: 160px !important;
     width: auto;
     object-fit: contain;
 }
@@ -227,15 +228,7 @@ CELULAR
 =========================== */
 
 @media (max-width:768px) {
-<<<<<<< HEAD
 
-=======
- 
-  /*   body {
-        padding-top: 95px;
-    } */
- 
->>>>>>> 4068820623a6178ebdbfd680bd1039102dc6078b
     .header {
         flex-direction: column !important;
         gap: 20px !important;
