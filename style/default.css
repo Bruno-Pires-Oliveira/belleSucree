@@ -227,7 +227,15 @@ CELULAR
 =========================== */
 
 @media (max-width:768px) {
+<<<<<<< HEAD
 
+=======
+ 
+  /*   body {
+        padding-top: 95px;
+    } */
+ 
+>>>>>>> 4068820623a6178ebdbfd680bd1039102dc6078b
     .header {
         flex-direction: column !important;
         gap: 20px !important;
