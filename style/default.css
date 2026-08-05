@@ -198,9 +198,9 @@ CELULAR
  
 @media (max-width:768px) {
  
-    body {
+  /*   body {
         padding-top: 95px;
-    }
+    } */
  
     .header {
         flex-direction: column;
