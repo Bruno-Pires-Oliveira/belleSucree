@@ -1,0 +1,20 @@
+.button-style {
+    border: 5px ridge var(--destaques) !important;
+    border-radius: 15px !important;
+    background-color: var(--botaoPrimario) !important;
+    text-shadow: 0 0 20px rgb(240, 113, 113) !important;
+}
+
+.border-vine {
+    border-color: var(--destaqueIcones) !important;
+}
+
+@media (min-width: 768px) {
+    .border-md-0 {
+        border: none !important;
+    }
+
+    .img-md-h {
+        height: 400px !important;
+    }
+}
