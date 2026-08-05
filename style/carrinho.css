@@ -351,7 +351,9 @@ hr {
 /* ===========================
 PAGAMENTO
 =========================== */
-
+.pagamento{
+    max-height: 300px !important;
+}
 .pagamento h2 {
     margin-bottom: 20px;
 }
@@ -396,7 +398,7 @@ FOOTER
 }
 
 .footer {
-    background: #6D4032;
+    background: #800000;
     color: #fff;
     margin-top: 80px;
 }
@@ -414,7 +416,7 @@ FOOTER
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--destaqueIcones);
 }
 
 .footer-col p {
