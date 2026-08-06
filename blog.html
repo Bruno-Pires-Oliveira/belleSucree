@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de receita</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./style/blogStyle.css">
-    <link rel="stylesheet" href="./style/default.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de receita</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/blogStyle.css">
+  <link rel="stylesheet" href="./style/default.css">
+</head>
 
 <body>
-    <div id="app">
-       <header>
+  <div id="app">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid p-2">
@@ -35,6 +37,9 @@
                 <li class="nav-item">
                   <a class="nav-link active linkHeader" aria-current="page" href="./catalogo.html">Catálogo</a>
                 </li>
+                  <li class="nav-item">
+                  <a class="nav-link active linkHeader" aria-current="page" href="./blog.html">Blog</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link active linkHeader" aria-current="page" href="./index.html">Depoimentos</a>
                 </li>
@@ -56,99 +61,155 @@
             <div></div>
            
 
-            <img src="./assets/docinhos.png" alt="" class="img-fluid">
-            <h2>Ingredientes</h2>
-            <ul>
-              <li>Farinha de trigo</li>
-              <li>Açúcar</li>
-              <li>Ovos</li>
-              <li>Manteiga ou óleo</li>
-              <li>Leite</li>
-              <li>Fermento em pó</li>
-              <li>Essência de baunilha (opcional)</li>
-            </ul>
-        </section>
+          <!-- LOGO -->
+          <div class="logo">
+            <img class="logo-navbar" src="./assets/logo_Belle_sucree_Horizontal-sem-fundo.png" alt="Belle Sucrée logo">
+          </div>
 
-   <h2>Receitas semelhantes</h2>
-        <aside class="receitasSemelhantes">
-       
-         <div class="card" style="width: 18rem;">
-         <img src="./assets/muffin.jpg" class="card-img-top img-fluid" alt="...">
-         <div class="card-body">
-         <h5 class="card-title">Muffin</h5>
-         <p class="card-text">Pequeno bolinho assado em forminhas, semelhante ao cupcake, mas geralmente menos doce e sem cobertura elaborada.</p>
+          <!-- BOTÃO MOBILE -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+          <!-- MENU -->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./Sobre.html">Sobre nos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./catalogo.html">Catálogo</a>
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
+
+      </nav>
+    </header>
+    <main class="main">
+      <section class="receitasSecao">
+        <h1>Cupcake cremoso</h1>
+        <span>Agosto 04, 2026</span>
+        <div></div>
+
+
+        <img src="./assets/docinhos.png" alt="" class="img-fluid">
+        <h2>Ingredientes</h2>
+        <ul>
+          <li>Farinha de trigo</li>
+          <li>Açúcar</li>
+          <li>Ovos</li>
+          <li>Manteiga ou óleo</li>
+          <li>Leite</li>
+          <li>Fermento em pó</li>
+          <li>Essência de baunilha (opcional)</li>
+        </ul>
+      </section>
+
+      <h2>Receitas semelhantes</h2>
+      <aside class="receitasSemelhantes">
+
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/muffin.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Muffin</h5>
+            <p class="card-text">Pequeno bolinho assado em forminhas, semelhante ao cupcake, mas geralmente menos doce e
+              sem cobertura elaborada.</p>
+          </div>
         </div>
-         <div class="card" style="width: 18rem;">
-         <img src="./assets/madaleine.jpg" class="card-img-top img-fluid" alt="...">
-         <div class="card-body">
-         <h5 class="card-title">Madeleine</h5>
-         <p class="card-text">Tradicional bolinho francês de massa leve e formato de concha, servido como lanche ou sobremesa.</p>
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/madaleine.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Madeleine</h5>
+            <p class="card-text">Tradicional bolinho francês de massa leve e formato de concha, servido como lanche ou
+              sobremesa.</p>
+          </div>
         </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/boloDeCaneca.webp" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bolo de caneca</h5>
+            <p class="card-text">Bolo individual preparado em uma caneca, com textura parecida e porções pequenas.</p>
+          </div>
         </div>
-         <div class="card" style="width: 18rem;">
-         <img src="./assets/boloDeCaneca.webp" class="card-img-top img-fluid" alt="...">
-         <div class="card-body">
-         <h5 class="card-title">Bolo de caneca</h5>
-         <p class="card-text">Bolo individual preparado em uma caneca, com textura parecida e porções pequenas.</p>
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/Petitgateau.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Petit gâteau</h5>
+            <p class="card-text">Pequeno bolo individual, conhecido pelo recheio cremoso que fica derretido no interior
+              após o forno.</p>
+          </div>
         </div>
-        </div>
-           <div class="card" style="width: 18rem;">
-         <img src="./assets/Petitgateau.jpg" class="card-img-top img-fluid" alt="...">
-         <div class="card-body">
-         <h5 class="card-title">Petit gâteau</h5>
-         <p class="card-text">Pequeno bolo individual, conhecido pelo recheio cremoso que fica derretido no interior após o forno.</p>
-        </div>
-        </div> 
-        </aside>
-     <div class="formulario">
-    <h2>Deixe um comentário!</h2>
-    <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">E-mail</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Nós não compartilharemos o seu e-mail com terceiros.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-  <label for="messageTextarea" class="form-label">Comentário</label>
-  <textarea class="form-control" id="messageTextarea" rows="3" placeholder="Digite sua mensagem aqui!"></textarea>
-</div>
-  <button type="submit" class="btn btn-primary">Publicar comentário</button>
-</form>
-</div>
-      </main>
-     <footer class="footer">
- 
+      </aside>
+      <div class="formulario">
+        <h2>Deixe um comentário!</h2>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nós não compartilharemos o seu e-mail com terceiros.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="messageTextarea" class="form-label">Comentário</label>
+            <textarea class="form-control" id="messageTextarea" rows="3"
+              placeholder="Digite sua mensagem aqui!"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Publicar comentário</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+
         <div class="footer-container align-items-center">
- 
+
             <!-- Logo -->
- 
+
             <div class="footer-col d-flex flex-column">
- 
+
                 <div class="d-flex flex-column align-items-center">
- 
+
                     <img class="logo-footer" src="./assets/logoBelleSucree.jpg" alt="Belle Sucrée logo">
- 
+
                     <section class="d-flex gap-5 p-2">
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-instagram"></i>
                         <i class="bi bi-twitter-x"></i>
                     </section>
- 
+
                 </div>
- 
+
             </div>
- 
+
             <!-- localização -->
- 
+
             <div class="footer-col">
- 
+
                 <h3>Localização</h3>
- 
+
                 <p>
                     Avenida das Flores, 248<br>
                     Centro Histórico<br>
@@ -156,36 +217,37 @@
                     CEP: 83203-120
                 </p>
             </div>
- 
+
             <!-- Contato -->
- 
+
             <div class="footer-col">
- 
+
                 <h3>Contato</h3>
- 
+
                 <p>(41) 99999-9999</p>
- 
+
                 <p>contato@bellesucree.com</p>
- 
+
                 <p>Paranaguá - PR</p>
- 
+
             </div>
- 
+
         </div>
- 
+
         <div class="footer-bottom d-flex gap-5 justify-content-center">
- 
+
             <span>© 2026. Todos os direitos reservados.</span>
             <span>Política de Privacidade</span>
             <span>Termos de Uso</span>
- 
-        </div>
- 
-    </footer>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        </div>
+
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 </body>
+
 </html>

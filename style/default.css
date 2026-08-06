@@ -51,18 +51,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* =========================== Cabeçalho =========================== */
 .navbar-custom {
-    background: #FFF8F0 !important;
+    background-color: #fff !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
     min-height: 100px;
     z-index: 9999;
 }
 
 .logo-navbar {
-    height: 90px;
+    height: 120px !important;
     width: auto;
     object-fit: contain;
 }
@@ -72,13 +73,16 @@
 }
 
 .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.4rem;
 }
 
 .nav-link {
-    color: var(--titulos) !important;
-    font-weight: 600;
-    font-size: 1.1rem;
+    color: var(--destaques) !important;
+    font-weight: 700 !important;
+    font-size: 1.4rem;
     padding: 14px 30px;
     position: relative;
     transition: .3s;
@@ -123,7 +127,7 @@
 }
 
 .navbar-toggler {
-    border: none;
+    border: 1px solid black;
 }
 
 .navbar-toggler:focus {
@@ -132,7 +136,7 @@
 
 /* =========================== Footer =========================== */
 .logo-footer {
-    height: 160px;
+    height: 160px !important;
     width: auto;
     object-fit: contain;
 }
@@ -224,55 +228,51 @@ CELULAR
 =========================== */
 
 @media (max-width:768px) {
- 
-  /*   body {
-        padding-top: 95px;
-    } */
- 
+
     .header {
-        flex-direction: column;
-        gap: 20px;
-        padding: 25px;
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 25px !important;
     }
 
     nav {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 20px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
     }
 
     .navbar-brand img {
-        height: 60px;
+        height: 60px !important;
     }
 
     .navbar-nav {
-        gap: 10px;
-        text-align: center;
-        margin: 20px 0;
+        gap: 10px !important;
+        text-align: center !important;
+        margin: 20px 0 !important;
     }
 
     .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 40px;
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        gap: 40px !important;
     }
 
     .footer-col:first-child {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 
     .logo-footer {
-        margin: 0 auto 15px;
+        margin: 0 auto 15px !important;
     }
 
     .footer-col section {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
         gap: 12px !important;
     }
 
@@ -284,10 +284,10 @@ TELAS PEQUENAS
 
 @media (max-width:480px) {
     .header {
-        padding: 20px;
+        padding: 20px !important;
     }
 
     .logo img {
-        height: 50px;
+        height: 50px !important;
     }
 }

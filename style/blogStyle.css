@@ -1,5 +1,3 @@
-
-
 a{
     text-decoration: none;
     color: white;
@@ -25,18 +23,18 @@ main{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 50%;
+  
 }
 
-span{
-    font-weight: bold;
 
-}
 img{
     border-radius: 10px;
 }
 
 p{
     padding: 10px;
+    margin: 0;
 }
 
 .formulario{
@@ -69,7 +67,6 @@ TABLET
         "main main main"
         "footer footer footer"
         ;
-        font-size: 24px;
     }
     
     header{
@@ -79,11 +76,7 @@ TABLET
         grid-area: main;
         
     }
-    .receitasSemelhantes{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+  
     footer{
         grid-area: footer;
     }
@@ -91,7 +84,17 @@ TABLET
     img{
         height: 400px !important; 
     }
-    
+    .receitasSemelhantes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    .receitasSemelhantes img {
+            height: 200px !important;
+        }
     .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -111,10 +114,10 @@ TABLET
     }
  
     .footer-bottom {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
-        gap: 12px !important;
+        
     }
  
 }
