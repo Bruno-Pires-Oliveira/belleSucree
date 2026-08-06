@@ -24,7 +24,6 @@ main{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 50%;
   
 }
 
@@ -86,12 +85,11 @@ TABLET
         height: 400px !important; 
     }
     .receitasSemelhantes{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+
+        
     }
     .receitasSemelhantes img {
             height: 200px !important;
@@ -126,9 +124,10 @@ TABLET
 
 @media (min-width:1024px) {
     .receitasSemelhantes{
-        display: flex;
-        flex-direction: row;
-        
+        /* display: flex;
+        flex-direction: row; */
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;        
     }
     header{
         padding: 10px;
