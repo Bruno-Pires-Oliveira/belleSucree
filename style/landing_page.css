@@ -14,7 +14,40 @@
         border: none !important;
     }
 
-    .img-md-h {
+    .img-equipe-md-h {
         height: 400px !important;
+    }
+
+    .img-fachada-md {
+        height: 240px !important;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .img-equipe-lg-h {
+        height: 600px !important;
+    }
+
+    .w-lg-85 {
+        width: 84% !important;
+    }
+
+    .img-fachada-lg {
+        height: 640px !important;
+    }
+}
+
+@media (min-width: 2560px) {
+    .img-equipe-lg-h {
+        height: 1100px !important;
+    }
+
+    .img-fachada-xxl {
+        height: 1200px !important;
+    }
+
+    .img-produtos-xxl {
+        height: 520px !important;
     }
 }
